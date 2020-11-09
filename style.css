@@ -1,16 +1,22 @@
+
 :root {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
+  --cor-dos-botoes: #888888;
+  --cor-das-bordas-e-backgrounds: #707070;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 .cabecalho {
   height: 45vh;
   color: #fff;
-  background: #707070 0% 0% no-repeat padding-box;
+  background: var(--cor-das-bordas-e-backgrounds) 0% 0% no-repeat padding-box;
   text-align: center;
-  padding: 5px;
-  margin: 0px;
+  padding: .3125rem;
+  margin: 0;
 }
 
 .cabecalho h1 {
@@ -23,17 +29,19 @@
 }
 
 .cabecalho h5 {
-  font-size: 0.875rem;
+  font-size: .875rem;
   font-weight: lighter;
 }
 
 .cabecalho .botoes {
-  color: gray;
   background: white;
-  padding: 10px 24px;
-  border-radius: 8px;
-  margin: 15px;
+  color: var(--cor-dos-botoes);
+  padding: .625rem 1.5rem;
+  border-radius: .5rem;
+  margin: .9375rem;
   text-decoration: none;
+  width: 10rem;
+  height: 2.5rem;
 }
 
 .corpo {
@@ -43,105 +51,105 @@
 
 .intro {
   text-align: left;
-  font: normal normal normal 12px/18px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
+  font: normal normal normal .75rem/1.125rem Helvetica Neue;
+  letter-spacing: 0;
+  color: var(--cor-dos-botoes);
   opacity: 1;
-  margin-left: 290px;
-  margin-top: 30px;
+  margin-left: 18.125rem;
+  margin-top: 1.875rem;
 }
 
 .divf {
-  margin: 50px 290px 0px 60px;
+  margin: 3.125rem 18.125rem 0 3.75rem;
 }
 
 .in {
-  height: 30px;
-  width: 340px;
-  margin-bottom: 20px;
+  height: 1.875rem;
+  width: 21.25rem;
+  margin-bottom: 1.25rem;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
+  border: .0625rem solid var(--cor-das-bordas-e-backgrounds);
   opacity: 1;
 }
 
 .info {
-  font-size: 12px;
+  font-size: .75rem;
   text-align: left;
-  letter-spacing: 0px;
-  color: #888888;
+  letter-spacing: 0;
+  color: var(--cor-dos-botoes);
   opacity: 1;
 }
 
 .sub {
-  height: 30px;
-  width: 340px;
+  height: 1.875rem;
+  width: 21.25rem;
+  color: var(--cor-dos-botoes);
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
+  border: .0625rem solid var(--cor-das-bordas-e-backgrounds);
   opacity: 1;
 }
 
 .parte_dos_produtos {
   display: flex;
   justify-content: center;
-  margin-left: 286px;
-  margin-right: 150px;
+  margin-left: 17.875rem;
+  margin-right: 9.375rem;
 }
 
 .sec {
-  width: 1500px;
+  width: 93.75rem;
   float: left;
-  margin-top: 85px;
+  margin-top: 5.3125rem;
   text-align: center;
-  font: normal normal normal 14px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
+  font: normal normal normal .875rem/1rem Helvetica Neue;
+  letter-spacing: 0;
+  color: var(--cor-dos-botoes);
   opacity: 1;
 }
 
 .sec h1 {
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .sec .botoes {
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 4px;
+  border: .0625rem solid var(--cor-das-bordas-e-backgrounds);
+  color: var(--cor-dos-botoes);
+  border-radius: .25rem;
   opacity: 1;
-  width: 180px;
+  width: 11.25rem;
 }
 
 .produto {
-  padding: 5px;
-  width: 210px;
-  margin: 7px;
+  padding: .3125rem;
+  width: 13.125rem;
+  margin: .4375rem;
   float: left;
   text-align: left;
 }
 
 .botao_mais {
-  background-color: #fff;
-  align-self: center;
-  text-align: center;
-  font: normal normal normal 16px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: .0625rem solid var(--cor-das-bordas-e-backgrounds);
+  border-radius: .25rem;
   opacity: 1;
-  margin-top: 52px;
-  margin-right: 150px;
-  width: 260px;
-  height: 39px;
+  color: var(--cor-dos-botoes);
+  margin-top: 3.25rem;
+  margin-right: 9.375rem;
+  width: 16.25rem;
+  height: 2.4375rem;
 }
 
 .borda {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
+  width: 9.375rem;
+  height: 9.375rem;
+  border: .0625rem solid black;
 }
 .mais {
   clear: both;
   text-align: center;
-  padding-top: 40px;
-  padding-right: 250px;
+  padding-top: 2.5rem;
+  padding-right: 15.625rem;
 }
 
 .final_da_pagina {
@@ -151,41 +159,41 @@
 
 .final {
   text-align: center;
-  font: normal normal normal 14px/16px Helvetica Neue;
-  letter-spacing: 0px;
+  font: normal normal normal .875rem/1rem Helvetica Neue;
+  letter-spacing: 0;
   color: #888888;
   opacity: 1;
 }
 
 .nome_do_amigo {
   text-align: left;
-  margin: 30px 45px 50px 350px;
+  margin: 1.875rem 2.8125rem 3.125rem 21.875rem;
 }
 
 .email_do_amigo {
   text-align: left;
-  margin: 30px 430px 50px 0px;
+  margin: 1.875rem 26.875rem 3.125rem 0;
 }
 
 .rodape .sub {
-  width: 260px;
-  height: 30px;
+  width: 16.25rem;
+  height: 1.875rem;
 }
 
 footer {
-  margin-top: 60px;
-  padding-top: 50px;
+  margin-top: 3.75rem;
+  padding-top: 3.125rem;
   align-items: center;
   font: normal normal normal 12px/18px Helvetica Neue;
-  letter-spacing: 0px;
+  letter-spacing: 0;
+  background: var(--cor-das-bordas-e-backgrounds) 0% 0% no-repeat padding-box;
   color: #ffffff;
-  background-color: #707070;
-  height: 120px;
+  height: 7.5rem;
   opacity: 1;
 }
 
 .rodape {
-  margin-left: 620px;
+  margin-left: 38.75rem;
   text-align: center;
-  width: 150px;
+  width: 9.375rem;
 }
